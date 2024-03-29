@@ -1,54 +1,61 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yummy Food</title>
 
-	<meta charset="utf-8">
-	<base href="/">
-
-	<title>YF</title>
-	<meta name="description" content="Task manager">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#202222">
-	<!-- Custom Browsers Color End -->
-
-	<link rel="stylesheet" href="css/main.min.css">
-
+	<link rel="stylesheet" href="css/commom.css"/>
+	<link rel="stylesheet" href="css/main.css" />
+	<script>
+		// js script
+	</script>
 </head>
+<body>
+	<div class="container" data-carousel-holder></div>
 
-<!-- Main_body -->
-<body class="is_home">
-	<!-- Header -->
-	<header class="top_line ">
-		<div class="logo">
-			<a href="#">YF</a>
+	<div class="container">
+		<h2 class="section-heading">
+			Our menu
+		</h2>
+		<div data-ribbon-holder></div>
+	</div>
+
+	<div class="container">
+		<div class="filters">
+			<div class="filters__inner">
+				<div class="filters__group">
+					<label class="filters__label">Max spiciness</label>
+					<div class="filters__slider" data-slider-holder></div>
+				</div>
+				<div class="filters__group">
+					<div class="filters__checkbox">
+						<input
+							class="styled-checkbox"
+							id="nuts-checkbox"
+							type="checkbox"
+							value="1"
+						>
+						<label for="nuts-checkbox">
+							<span class="filters__label">Vegeterian only</span>
+						</label>
+					</div>
+				</div>
+			</div>
 		</div>
-	</header>
-
-	<!-- section js -->
-	<section class="gulp_section">
-		<h2>YF</h2>
-		<img src="img/src/photo_2.1.jpg">
-	</section>
-
-	<!-- footer_bottom -->
-	<footer class="bottom_footer">
-		<div class="container text-center">
-			<div class="footer_copyright">2022 © <span class="logo_footer logo_litera">GULP</span></div>
-			<p>TriKita73</p>
+	</div>
+	<div class="container" data-products-grid-holder>
+		<div class="products-grid is-loading">
+			<div class="products-grid__skeleton">
+				<div class="products-grid__skeleton-item"></div>
+				<div class="products-grid__skeleton-item"></div>
+				<div class="products-grid__skeleton-item"></div>
+				<div class="products-grid__skeleton-item"></div>
+				<div class="products-grid__skeleton-item"></div>
+				<div class="products-grid__skeleton-item"></div>
+			</div>
+			<div class="products-grid__inner"></div>
 		</div>
-	</footer>
-	<script src="js/common.min.js"></script>
-
+	</div>
 </body>
 </html>
