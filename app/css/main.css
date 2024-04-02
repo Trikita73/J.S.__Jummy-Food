@@ -8,4 +8,7 @@
 @import '/css/tools/stepslider.css';
 
 /* ProductCard */
-@import '/css/tools/productcard.css'
+@import '/css/tools/productcard.css';
+
+/* ProductsGrid */
+@import '/css/tools/productsgrid.css';
