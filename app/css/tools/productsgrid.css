@@ -1,6 +1,6 @@
 .products-grid .products-grid__inner {
     display: grid;
-    grid-gap: grid;
+    grid-gap: 20px;
     grid-template-columns: repeat(3, calc(33.3333% - 14px));
 }
 
