@@ -17,4 +17,7 @@
 @import '/css/tools/modal.css';
 
 /* CartIcon */
-@import 'css/tools/carticon.css';
+@import '/css/tools/carticon.css';
+
+/* Cart */
+@import '/css/tools/cart.css';
