@@ -15,3 +15,6 @@
 
 /* Modal */
 @import '/css/tools/modal.css';
+
+/* CartIcon */
+@import 'css/tools/carticon.css';
