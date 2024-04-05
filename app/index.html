@@ -8,7 +8,12 @@
 	<link rel="stylesheet" href="./css/settings/common.css"/>
 	<link rel="stylesheet" href="./css/main.css" />
 	<script>
-		// js script
+		import Main from './js/main.js';
+
+		let main = new Main();
+
+		main.render()
+			.then(() => console.log('Страница готова!'));
 	</script>
 </head>
 <body>

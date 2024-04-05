@@ -21,3 +21,6 @@
 
 /* Cart */
 @import '/css/tools/cart.css';
+
+/* Filters */
+@import '/css/settings/filters.css';
