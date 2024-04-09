@@ -25,7 +25,7 @@ export default class Main {
         });
 
         document.body.addEventListener('product-add', ({ detail: productId}) => {
-            let product = this.products.find(products => product.id == productId);
+            let product = this.products.find(product => product.id == productId);
             this.cart.addProduct(product);
         });
 

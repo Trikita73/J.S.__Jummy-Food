@@ -1,4 +1,4 @@
-import createElement from '../libs/assets/create-element.js';
+import createElement from '../../libs/assets/create-element.js';
 
 export default class Carousel {
 
