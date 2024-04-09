@@ -1,4 +1,5 @@
-import Carousel from './importjs/carousel.js';
+import Carousel from './import/carousel.js';
+import slides from './import/slides.js';
 
 export default class Main {
 
