@@ -1,6 +1,8 @@
 import Carousel from './import/carousel.js';
 import slides from './import/slides.js';
 
+import RibbonMenu from './import/ribbonmenu.js';
+
 export default class Main {
 
     constructor() {
