@@ -2,6 +2,7 @@ import Carousel from './import/carousel.js';
 import slides from './import/slides.js';
 
 import RibbonMenu from './import/ribbonmenu.js';
+import categories from './import/categories.js';
 
 export default class Main {
 
