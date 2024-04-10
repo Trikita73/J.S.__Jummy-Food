@@ -4,6 +4,8 @@ import slides from './import/slides.js';
 import RibbonMenu from './import/ribbonmenu.js';
 import categories from './import/categories.js';
 
+import StepSlider from './import/stepslider.js';
+
 export default class Main {
 
     constructor() {
