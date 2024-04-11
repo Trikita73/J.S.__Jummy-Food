@@ -5,6 +5,7 @@ import RibbonMenu from './import/ribbonmenu.js';
 import categories from './import/categories.js';
 
 import StepSlider from './import/stepslider.js';
+import ProductGrid from './import/productgrid.js';
 
 export default class Main {
 
