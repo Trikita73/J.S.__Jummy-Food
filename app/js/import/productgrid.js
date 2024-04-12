@@ -1,5 +1,5 @@
-import createElement from "../../libs/assets/create-element.js";
-
+import createElement from '../../libs/assets/create-element.js';
+import ProductCard from './productcard.js';
 
 export default class ProductGrid {
     constructor(products) {
