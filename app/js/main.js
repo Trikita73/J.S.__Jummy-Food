@@ -100,7 +100,7 @@ export default class Main {
 
     async fetchProducts() {
         let response = await fetch('products.json');
-        let product = await response.json();
+        let products = await response.json();
 
         return products;
     }
