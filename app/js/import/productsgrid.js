@@ -10,7 +10,7 @@ export default class ProductGrid {
 
     render() {
         this.elem = createElement(`<div class="products-grid">
-            <div class="products__inner"></div>
+            <div class="products-grid__inner"></div>
         </div>`);
 
         this.renderContent();
@@ -40,5 +40,9 @@ export default class ProductGrid {
     updateFilter(filters) {
         Object.assign(this.filters, filters);
         this.renderContent();
+    }
+
+    sub(ref) {
+        return this.elem.querySelector(`.products-grid__${ref}`);
     }
 }
