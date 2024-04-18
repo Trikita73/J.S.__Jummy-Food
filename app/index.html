@@ -18,50 +18,58 @@
 	</script>
 </head>
 <body>
-	<div class="container" data-carousel-holder></div>
+	<header class="header container">
+		<!-- the font does not support cyrillic -->
+		<h1 class="heading logo">Yummy Food</h1>
+		<h3 class="subheading">Great food・Free delivery・Fair price</h3>
 
-	<div class="container">
-		<h2 class="section-heading">
-			Our menu
-		</h2>
-		<div data-ribbon-holder></div>
-	</div>
+		<div data-cart-icon-holder></div>
+	</header>
 
-	<div class="container">
-		<div class="filters">
-			<div class="filters__inner">
-				<div class="filters__group">
-					<label class="filters__label">Max spiciness</label>
-					<div class="filters__slider" data-slider-holder></div>
-				</div>
-				<div class="filters__group">
-					<div class="filters__checkbox">
-						<input
-							class="styled-checkbox"
-							id="nuts-checkbox"
-							type="checkbox"
-							value="1"
-						>
-						<label for="nuts-checkbox">
-							<span class="filters__label">Vegeterian only</span>
-						</label>
+	<main>
+		<div class="container" data-carousel-holder></div>
+		<div class="container">
+			<h2 class="section-heading">
+				Our menu
+			</h2>
+			<div data-ribbon-holder></div>
+		</div>
+		<div class="container">
+			<div class="filters">
+				<div class="filters__inner">
+					<div class="filters__group">
+						<label class="filters__label">Max spiciness</label>
+						<div class="filters__slider" data-slider-holder></div>
+					</div>
+					<div class="filters__group">
+						<div class="filters__checkbox">
+							<input
+								class="styled-checkbox"
+								id="nuts-checkbox"
+								type="checkbox"
+								value="1"
+							>
+							<label for="nuts-checkbox">
+								<span class="filters__label">Vegeterian only</span>
+							</label>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container" data-products-grid-holder>
-		<div class="products-grid is-loading">
-			<div class="products-grid__skeleton">
-				<div class="products-grid__skeleton-item"></div>
-				<div class="products-grid__skeleton-item"></div>
-				<div class="products-grid__skeleton-item"></div>
-				<div class="products-grid__skeleton-item"></div>
-				<div class="products-grid__skeleton-item"></div>
-				<div class="products-grid__skeleton-item"></div>
+		<div class="container" data-products-grid-holder>
+			<div class="products-grid is-loading">
+				<div class="products-grid__skeleton">
+					<div class="products-grid__skeleton-item"></div>
+					<div class="products-grid__skeleton-item"></div>
+					<div class="products-grid__skeleton-item"></div>
+					<div class="products-grid__skeleton-item"></div>
+					<div class="products-grid__skeleton-item"></div>
+					<div class="products-grid__skeleton-item"></div>
+				</div>
+				<div class="products-grid__inner"></div>
 			</div>
-			<div class="products-grid__inner"></div>
 		</div>
-	</div>
+	</main>
 </body>
 </html>
