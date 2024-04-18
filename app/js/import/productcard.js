@@ -12,7 +12,7 @@ export default class ProductCard {
         this.elem = createElement(`<div class="card">
             <div class="card__top">
                 <img 
-                    src="/app/img/product/${this.product.image}"
+                    src="/img/product/${this.product.image}"
                     class="card__image"
                     alt="product"
                 />
@@ -21,7 +21,7 @@ export default class ProductCard {
             <div class="card__body">
                 <div class="card__title">${escapeHtml(this.product.name)}</div>
                 <button type ="button" class="card__button">
-                    <img src="/app/img/icon/plus-icon.svg" alt="icon" />
+                    <img src="/img/icon/plus-icon.svg" alt="icon" />
                 </button>
             </div>
 	    </div>`);
