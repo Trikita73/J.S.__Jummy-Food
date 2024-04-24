@@ -57,7 +57,7 @@ export default class StepSlider {
 
         this.elem.dispatchEvent(
             new CustomEvent('slider-change', {
-                datail: this.value,
+                detail: this.value,
                 bubbles: true
             })
         );
