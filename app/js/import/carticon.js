@@ -24,7 +24,7 @@ export default class CartIcon {
             this.updatePosition();
 
             this.elem.classList.add('shake');
-            this.elem.addEventListener('transitionen', () => {
+            this.elem.addEventListener('transitionend', () => {
                 this.elem.classList.remove('shake');
             }, {once: true});
 
