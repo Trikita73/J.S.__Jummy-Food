@@ -94,7 +94,7 @@
 
 @media all and (max-width: 767px) {
     .ribbon {
-        max-bottom: 0;
+        margin-bottom: 0;
     }
 
     .ribbon__item {
