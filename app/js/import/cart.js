@@ -59,18 +59,18 @@ export default class Cart {
         return createElement(`
         <div class="cart-product" data-product-id="${product.id}">
             <div class="cart-product__img">
-                <img src="/app/img/product/${product.image}" alt="product">
+                <img src="../../img/product/${product.image}" alt="product">
             </div>
             <div class="cart-product__info">
                 <div class="cart-product__title">${escapeHtml(product.name)}</div>
                 <div class="cart-product__price-wrap">
                     <div class="cart-counter">
                         <button type="button" class="cart-counter__button cart-counter__button_minus">
-                            <img src="/app/img/icon/square-minus-icon.svg" alt="minus">
+                            <img src="../../img/icon/square-minus-icon.svg" alt="minus">
                         </button>
                         <span class="cart-counter__count">${count}</span>
                         <button type="button" class="cart-counter__button cart-counter__button_plus">
-                            <img src="/app/img/icon/square-plus-icon.svg" alt="plus">
+                            <img src="../../img/icon/square-plus-icon.svg" alt="plus">
                         </button>
                     </div>
                     <div class="cart-product__price">€${product.price.toFixed(2)}</div>
@@ -79,16 +79,16 @@ export default class Cart {
         </div>`);
     }
 
-    renderOrderFrom() {
-        return createElement(`<form class="cart-from">
-            <h5 class="cart-from__title">Delivery</h5>
-            <div class="cart-from__group cart-from__group_row">
-                <imput name="name" type="text" class="cart-from__input" placeholder="Name" required value="Santa Calus">
-                <imput name="email" type="email" class="cart-from__input" placeholder="Email" required value="john@gmail.com">
-                <input name="tel" type="tel" class="cart-from__input" placeholder="Phone" value="+1234567">	
+    renderOrderForm() {
+        return createElement(`<form class="cart-form">
+            <h5 class="cart-form__title">Delivery</h5>
+            <div class="cart-form__group cart-form__group_row">
+                <input name="name" type="text" class="cart-form__input" placeholder="Name" required value="Santa Claus">
+                <input name="email" type="email" class="cart-form__input" placeholder="Email" required value="john@gmail.com">
+                <input name="tel" type="tel" class="cart-form__input" placeholder="Phone" required value="+1234567">
             </div>
-            <div class="cart-from__group">
-                <input name="address" type="text" class="cart-from__input" placeholder="Address" required value="North, Lapland, Snow Home">
+            <div class="cart-form__group">
+                <input name="address" type="text" class="cart-form__input" placeholder="Address" required value="North, Lapland, Snow Home">
             </div>
             <div class="cart-buttons">
                 <div class="cart-buttons__buttons btn-group">
@@ -96,7 +96,7 @@ export default class Cart {
                         <span class="cart-buttons__info-text">total</span>
                         <span class="cart-buttons__info-price">€${this.getTotalPrice().toFixed(2)}</span>
                     </div>
-                    <button type="submit" class="cart-button btn-group__button">order</button>
+                    <button type="submit" class="cart-buttons__button btn-group__button button">order</button>
                 </div>
             </div>
 	    </form>`);
@@ -196,7 +196,7 @@ export default class Cart {
     };
 
     addEventListeners() {
-        this.cartIcon.onclick = () => this.renderModal();
+        this.cartIcon.elem.onclick = () => this.renderModal();
     }
 
 }
