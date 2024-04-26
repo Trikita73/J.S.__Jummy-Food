@@ -51,7 +51,7 @@ export default class CartIcon {
         if (isHeaderCartScrolled) {
             this.fixPosition();
         } else {
-            this.renderPosition();
+            this.resetPosition();
         }
     }
 
