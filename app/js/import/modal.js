@@ -13,7 +13,7 @@ export default class Modal {
                 <div class="modal__overlay"></div>
                 <div class="modal__inner">
                     <div class="modal__header">
-                        <button type="button" class="modal__close">
+                        <button type="button" class="modal__close" data-modal-close>
                             <img src="../../img/icon/cross-icon.svg" alt="close-icon" />
                         </button>
                         <h3 class="modal__title"></h3>
@@ -41,7 +41,7 @@ export default class Modal {
     }
 
     onClick(event) {
-        if (event.target.closest('.modal__close')) {
+        if (event.target.closest('.modal__close, .button__close')) {
             event.preventDefault();
             this.close();
         }

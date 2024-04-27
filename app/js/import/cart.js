@@ -189,8 +189,11 @@ export default class Cart {
                 <p>
                     Order successful! Your order is being cooked :) <br>
                     We’ll notify you about delivery time shortly.<br>
-                    <img src="/app/img/gif/delivery.gif">
+                    <img src="../../img/gif/delivery.gif">
                 </p>
+            </div>
+            <div class="modal__buttons">
+                <button type="button" class="button button__close" data-modal-close>BACK TO HOMEPAGE</button>
             </div>
         `;
     };
@@ -200,3 +203,6 @@ export default class Cart {
     }
 
 }
+
+
+
