@@ -136,7 +136,7 @@ export default class Cart {
             let productId = productElem.dataset.productId;
             this.updateProductCount(
                 productId,
-                event.target.closest(". cart-counter__button_plus") ? 1 : -1
+                event.target.closest(".cart-counter__button_plus") ? 1 : -1
             );
         }
     };
