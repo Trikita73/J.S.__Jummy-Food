@@ -24,3 +24,6 @@
 
 /* Filters */
 @import '/css/settings/filters.css';
+
+/* Footer */
+@import '/css/tools/footer.css';
